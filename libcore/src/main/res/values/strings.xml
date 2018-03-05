@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Core</string>
+    <string name="exit">退出</string>
+    <string name="return_to">返回</string>
+    <string name="search">查询</string>
+    <string name="filter_code">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="scan_text">将条形码放入框内, 即可自动扫描</string>
+</resources>

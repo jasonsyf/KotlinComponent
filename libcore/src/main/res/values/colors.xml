@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#F5F5F6</color>
+    <color name="colorGray">#DEDEDE</color>
+    <!--常用色值-->
+    <!--大红色-->
+    <color name="bigRed">#e60012</color>
+    <!--蓝绿色-->
+    <color name="blueGreen">#3dbba2</color>
+    <!--绿-->
+    <color name="green">#4aba6f</color>
+    <!--字体色值-->
+    <color name="text_black">#282828</color>
+    <!--深灰-->
+    <color name="text_high_gray">#282828</color>
+    <!--浅灰-说明文字-->
+    <color name="text_light_gray">#989898</color>
+    <!--水印色-->
+    <color name="text_water_mark">#c3c3c3</color>
+    <!--分割线-->
+    <color name="divider">#e5e5e5</color>
+    <!--渐变色开始-->
+    <color name="btn_start">#fb7258</color>
+    <!--渐变色结束-->
+    <color name="btn_end">#fb7258</color>
+
+
+    <!--apptitlebar-->
+    <color name="stateColor">#31c27c</color>
+    <color name="tabColor">#4bc6de</color>
+    <color name="tab_Color">#4bc6de</color>
+    <color name="price_textColor_pressed">#333333</color>
+    <color name="line">#d0d0d0</color>
+    <color name="transparent">#00000000</color>
+    <color name="selectorColor">#dbdbdb</color>
+
+    <!--actionbar颜色-->
+    <color name="colorActionBar">#282828</color>
+    <!--基础色-->
+    <color name="white">#FFFFFF</color>
+    <!--黑色-->
+    <color name="black">#000000</color>
+    <!--银色-->
+    <color name="silver">#C0C0C0</color>
+    <!--灰色-->
+    <color name="gray">#808080</color>
+    <!--褐紫红-->
+    <color name="maroon">#800000</color>
+    <!--红色-->
+    <color name="red">#FF0000</color>
+
+    <!--紫色-->
+    <color name="purple">#800080</color>
+    <!--晚樱-->
+    <color name="fuchsia">#FF00FF</color>
+
+    <!--石灰-->
+    <color name="lime">#00FF00</color>
+    <!--橄榄-->
+    <color name="olive">#808000</color>
+    <!--黄-->
+    <color name="yellow">#FFFF00</color>
+    <!--海军蓝-->
+    <color name="navy">#000080</color>
+    <!--蓝-->
+    <color name="blue">#0000FF</color>
+    <!--水鸭-->
+    <color name="teal">#008080</color>
+    <!--水蓝-->
+    <color name="aqua">#00FFFF</color>
+    <!--天蓝-->
+    <color name="skyBlue">#2c99ff</color>
+    <!--深灰-->
+    <color name="deepGray">#656565</color>
+    <!--浅灰-->
+    <color name="lightGray">#989898</color>
+    <!--橙色-->
+    <color name="orange">#FFA200</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--主题色-->
+    <color name="colorTheme">#40b2a6</color>
+    <!--金色-->
+    <color name="gold">#d2a36c</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#ffff00</color>
+    <!--深蓝-->
+    <color name="deepBlue">#127ADD</color>
+    <color name="colorMoney">#fff100</color>
+
+
+    <color name="system_bar_bg">#008EEF</color>
+
+    <color name="cancel_bg">#F4F4F4</color>
+    <color name="sure_bg">#0084FE</color>
+
+    <!-- 围栏覆盖物颜色 -->
+    <color name="server_fence">#FF0601</color>
+    <color name="local_fence">#2319DC</color>
+
+    <color name="layout_title">#008EEF</color>
+
+    <color name="list_item_title">#333333</color>
+    <color name="list_item_desc">#666666</color>
+    <color name="list_divide_line">#E1E1E1</color>
+    <color name="list_bg">#F6F6F6</color>
+
+    <!-- 对话框分割线 -->
+    <color name="dialog_divide_line">#bababa</color>
+
+    <!-- 对话框取消按钮背景色 -->
+    <color name="dialog_cancel_bg">#dfdcdc</color>
+
+    <!-- 对话框标题颜色 -->
+    <color name="dialog_title">#323232</color>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="MutiProgress">
+        <attr name="nodesNum" format="integer"/> <!-- 节点数量 -->
+        <attr name="nodeRadius" format="dimension"/><!-- 节点半径 -->
+        <attr name="progressingDrawable" format="reference"/><!-- 完成的节点图标 -->
+        <attr name="unprogressingDrawable" format="reference" />  <!-- 未完成的节点图标 -->
+        <attr name="progresFailDrawable" format="reference" /> <!-- 失败的图片 -->
+        <attr name="progresSuccDrawable" format="reference" /><!-- 成功的图片 -->
+        <attr name="processingLineColor" format="color"/><!-- 进度条颜色 -->
+        <attr name="currNodeNO" format="integer"/>  <!-- 当前所到达的节点编号  0开始计算-->
+        <attr name="currNodeState" format="integer"/> <!-- 当前所到达的节点状态，0：失败  1：成功 -->
+    </declare-styleable>
+
+    <declare-styleable name="AppTitleBar">
+        <attr name="bar_title" format="string"/>
+        <attr name="back_img" format="reference"/>
+        <attr name="back_text" format="string"/>
+        <attr name="action_img" format="reference"/>
+        <attr name="action_text" format="string"/>
+        <attr name="bar_background" format="reference|color"/>
+        <attr name="bar_title_text_color" format="reference|color"/>
+    </declare-styleable>
+
+</resources>
