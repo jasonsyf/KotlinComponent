@@ -66,6 +66,7 @@ dependencies {
     if (!isModule.toBoolean()) {
         implementation project(':modulewhether')
         implementation project(':moduletraffic')
+        implementation project(':modulerxjava')
     }
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

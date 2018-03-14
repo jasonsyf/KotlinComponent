@@ -5,6 +5,8 @@
     <application android:theme="@style/AppTheme">
         <activity android:name=".TestGankActivity">
         </activity>
+        <activity android:name=".GankDetailActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -42,7 +42,7 @@ public  abstract class RecycleCommonAdapter<T> extends RecyclerView.Adapter<View
 
     @Override
     public ViewHolder onCreateViewHolder(final ViewGroup parent, int viewType) {
-        ViewHolder viewHolder = ViewHolder.get(mContext, null, parent, mLayoutId, -1);
+        ViewHolder viewHolder = ViewHolder.Companion.get(mContext, null, parent, mLayoutId, -1);
         setListener(parent, viewHolder, viewType);
         return viewHolder;
     }
