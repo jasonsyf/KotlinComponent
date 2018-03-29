@@ -1,4 +1,4 @@
-def supportVersion = "26.0.2"
+def supportVersion = "27.0.2"
 def retrofitVersion = "2.3.0"
 def okHttpVersion = "3.7.0"
 def daggerVersion = "2.8"
@@ -6,7 +6,7 @@ def daggerVersion = "2.8"
 project.ext {
     android = [
             compileSdkVersion: 26,
-            buildToolsVersion: "26.0.2",
+            buildToolsVersion: "27.0.3",
             applicationId    : "com.jason_sunyf.kotlincomponent",
             minSdkVersion    : 19,
             targetSdkVersion : 23,
