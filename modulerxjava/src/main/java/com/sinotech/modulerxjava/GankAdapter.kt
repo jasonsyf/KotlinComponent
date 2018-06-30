@@ -5,7 +5,9 @@ import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import com.alibaba.android.arouter.launcher.ARouter
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.item_list_gank.view.*
 
 /**
@@ -20,6 +22,13 @@ class GankAdapter(private val context: Context, private val data: MutableList<Ga
             item_gank_title?.text = data!![position].desc
             item_gank_date?.text = data[position].publishedAt
             item_gank_who?.text = data[position].who
+            val imageView: ImageView = item_gank_img
+            if (data[position].images != null) {
+                item_gank_img.visibility=View.VISIBLE
+                Glide.with(context).load(data[position].images[0]).asGif().into(item_gank_img)
+            } else {
+                item_gank_img.visibility=View.GONE
+            }
         }
         holder.itemView.setOnClickListener(View.OnClickListener {
             ARouter.getInstance().build("/kotlin/GankDetailActivity")

@@ -2,6 +2,7 @@ package com.jason_sunyf.moudlewhether.whether
 
 import android.util.Log
 import com.google.gson.Gson
+import com.jason_sunyf.core.appbase.Config
 import com.jason_sunyf.core.base.BaseSubscriber
 import com.jason_sunyf.core.http.RetrofitUtil
 import com.jason_sunyf.core.http.rxfamily.RxPresenter
@@ -18,7 +19,7 @@ class WhetherPresenter(var mViews: WhetherContract.View) : RxPresenter<WhetherCo
 
     override fun getWhetherData(cityname: String) {
         addSubscribe(RetrofitUtil.init().create(JuheApis::class.java)
-                .getWhether(cityname, "3113bf386346db1f52e57ef6483cbac8")
+                .getWhether(Config.BaseIP+"weather/index",cityname, "3113bf386346db1f52e57ef6483cbac8")
                 .compose(RxUtil.rxSchedulerHelper())
                 .compose(RxUtil.handleResult())
                 .subscribeWith(object : BaseSubscriber<WhetherByCity>(mViews) {

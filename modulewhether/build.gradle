@@ -58,6 +58,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     kapt 'com.alibaba:arouter-compiler:1.1.4'
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
     implementation project(':libcore')
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }

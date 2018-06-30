@@ -16,5 +16,7 @@ data class GankItem(
 		val type: String,
 		val url: String,
 		val used: Boolean,
-		val who: String
+		val who: String,
+		val images: List<String>
+
 )

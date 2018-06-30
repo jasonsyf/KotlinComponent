@@ -20,6 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitUtil {
     private static Retrofit retrofit;
+    private static Retrofit retrofit1;
 
     public static Retrofit init() {
         if (retrofit == null) {
@@ -38,10 +39,10 @@ public class RetrofitUtil {
         return retrofit;
     }
     public static Retrofit init(String baseUrl) {
-        if (retrofit == null) {
+        if (retrofit1 == null) {
             synchronized (RetrofitUtil.class) {
-                if (retrofit == null) {
-                    retrofit = new Retrofit
+                if (retrofit1 == null) {
+                    retrofit1 = new Retrofit
                             .Builder()
                             .baseUrl(baseUrl)
                             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -51,7 +52,7 @@ public class RetrofitUtil {
                 }
             }
         }
-        return retrofit;
+        return retrofit1;
     }
 
     private static String getBaseUrl() {
