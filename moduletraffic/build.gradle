@@ -61,7 +61,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     kapt 'com.alibaba:arouter-compiler:1.1.4'
     implementation project(':libcore')
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 repositories {

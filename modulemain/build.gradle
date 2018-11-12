@@ -68,7 +68,7 @@ dependencies {
         implementation project(':moduletraffic')
         implementation project(':modulerxjava')
     }
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 repositories {
