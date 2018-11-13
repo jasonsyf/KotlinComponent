@@ -3,6 +3,9 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
+    lintOptions {
+        abortOnError false
+    }
     compileSdkVersion rootProject.ext.android.compileSdkVersion
 
     defaultConfig {
@@ -10,6 +13,7 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -50,12 +54,13 @@ dependencies {
     api rootProject.ext.dependencies["glide-okhttp3-integration"]
     // json解析
     api rootProject.ext.dependencies["fastjson"]
+    api rootProject.ext.dependencies["multidex"]
     api files('src/main/jniLibs/zxing.jar')
     api 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.3@aar'
     //状态栏处理
     api 'com.jaeger.statusbarutil:library:1.4.0'
     api 'com.alibaba:arouter-api:1.3.1'
-    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     // Anko Commons
     api "org.jetbrains.anko:anko-commons:0.10.4"
     // Room

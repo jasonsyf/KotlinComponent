@@ -4,6 +4,9 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 android {
+    lintOptions {
+        abortOnError false
+    }
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     buildToolsVersion rootProject.ext.android.buildToolsVersion
 
@@ -13,6 +16,7 @@ android {
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
         versionName rootProject.ext.android.versionName
+        multiDexEnabled true
         javaCompileOptions {
             kapt {
                 arguments {
@@ -39,7 +43,7 @@ dependencies {
     if (!isModule.toBoolean()) {
         implementation project(':modulemain')
     }
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 }
 repositories {
     mavenCentral()
