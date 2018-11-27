@@ -1,8 +1,11 @@
 package com.jason_sunyf.core.http;
 
 
+import com.jason_sunyf.core.appbase.BaseApplication;
 import com.jason_sunyf.core.appbase.Config;
 import com.jason_sunyf.core.http.interceptor.LogInterceptor;
+import com.jason_sunyf.core.http.sslauthen.HttpsUtil;
+import com.jason_sunyf.core.http.sslauthen.SSLHelper;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
@@ -66,6 +69,8 @@ public class RetrofitUtil {
     private static OkHttpClient getClient() {
         return new OkHttpClient.Builder()
                 .addInterceptor(new LogInterceptor())
+//                .sslSocketFactory(SSLHelper.getSSLCertifcation(BaseApplication.getInstance()), new HttpsUtil.UnSafeTrustManager())
+//                .hostnameVerifier(new HttpsUtil.UnSafeHostnameVerifier())//由于还没有域名，此处设置忽略掉域名校验
                 .build();
     }
 }

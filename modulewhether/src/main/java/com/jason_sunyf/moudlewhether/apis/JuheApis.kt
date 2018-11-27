@@ -17,5 +17,7 @@ interface JuheApis {
     @GET()
     fun getWhether(@Url url:String,@Query("cityname") cityname: String,
                    @Query("key") key: String): Flowable<JhResponse<WhetherByCity>>
+    @GET()
+    fun getWeiboData(@Url url:String): Flowable<JhResponse<Any>>
 
 }
